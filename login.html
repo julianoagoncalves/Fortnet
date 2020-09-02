@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+           <a href="index.html" class="home"><img src="Img/Bitnet.JPG" title="Fortnet"></a>
+        </header>
+            <form method="POST">
+                <fieldset class="fd">
+                    <legend>Acessar Conta</legend>
+                    <label for="conta" class="lbl" title="Digite o número da conta">Nº Conta:</label>
+                    <!--tag alt serve para pessoas com deficiencia visulal pois o leitor de tela sempre ira localiza-la e descrevere o que o cursor do mouse esta por cima-->
+                    <input type="text" name="conta" class="txt" placeholder="Digite o número da conta" title="Digite o número da conta" autofocus required>
+                    <br>
+                    <br>
+                    <label for="senha" class="lbl" title="Digite a senha">Senha:</label>
+                    <input type="password" name="senha" class="txt" placeholder="Digite a senha" title="Digite a senha" required>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="lembrar" id="lembrar" title="Selecione para salvar número da conta e senha">
+                    <label for="lembrar" class="lbl" title="Selecione para salvar número da conta e senha">Lembrar</label>
+                    <br>
+                    <br>
+                    <button type="submit" formaction="#" class="btn" title="Acessar">Acessar</button>
+                    <br>
+                    <br>
+                    <a href="recuperar_acesso.html">Esqueci minha senha</a>
+                    <br>
+                    <br>
+                    <a href="">Criar conta</a>
+                </fieldset>
+            </form>
+        <footer></footer>
+    </body>
+</html>
