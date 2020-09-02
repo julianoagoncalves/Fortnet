@@ -39,38 +39,45 @@
             <form class="form-inline my-2 my-lg-0">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <button class="btn btn-outline-light" type="button">Abrir Conta</button>
+                  <a href="cadastro.html" class="btn btn-outline-light">Abrir Conta</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="login.html">Acessar Conta</a>
+                  <a class="nav-link active" href="login.html">Acessar Conta</a>
                 </li>
               </ul>
             </form>
         </div>
       </nav>
     </header>
-    <form method="POST">
-        <fieldset class="fd">
-            <legend>Acessar Conta</legend>
-            <label for="conta" class="lbl" title="Digite o número da conta">Nº Conta:</label>
-            <!--tag alt serve para pessoas com deficiencia visulal pois o leitor de tela sempre ira localiza-la e descrevere o que o cursor do mouse esta por cima-->
-            <input type="text" name="conta" class="txt" placeholder="Digite o número da conta" title="Digite o número da conta" autofocus required>
-            <br>
-            <br>
-            <label for="senha" class="lbl" title="Digite a senha">Senha:</label>
-            <input type="password" name="senha" class="txt" placeholder="Digite a senha" title="Digite a senha" required>
-            <br>
-            <br>
-            <input type="checkbox" name="lembrar" id="lembrar" title="Selecione para salvar número da conta e senha">
-            <label for="lembrar" class="lbl" title="Selecione para salvar número da conta e senha">Lembrar</label>
-            <br>
-            <br>
-            <button type="submit" formaction="#" class="btn" title="Acessar">Acessar</button>
-            <br>
-            <br>
-            <a href="recuperar_acesso.html">Esqueci minha senha</a>
-        </fieldset>
-    </form>
+    <div class="container" id="containerPrincipal">
+      <div class="card bg-white shadow mt-5">
+        <div class="card-header bg-white border-0">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h3 class="mb-0">Acessar Conta</h3>
+            </div>
+          </div>
+        </div>
+          <div class="card-body">
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <div class="form-group">
+                      <label class="form-control-label" for="inputConta">Nº Conta:</label>
+                      <input type="text" id="inputConta" class="form-control" placeholder="Digite o número da conta" autofocus required>
+                      <label class="form-control-label mt-3" for="inputPassword">Senha:</label>
+                      <input type="password" id="inputPassword" class="form-control" placeholder="Digite sua senha" required>
+                      <a href="javascript: {}" id="btnSave" class="btn btn-sm btn-primary mt-4">Acessar</a>
+                      <a href="recuperar_acesso.html" class="btn btn-link">Esqueci minha senha</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>    
+          </div>
+      </div>
+  </div>          
     <footer>
 
     </footer>
