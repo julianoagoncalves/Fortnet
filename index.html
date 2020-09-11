@@ -73,24 +73,24 @@
                 <section id="contato">
                     <div class="card m-5">
                         <form class="m-5">
-                            <h5 class="card-title ml-3">Contato</h5>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label for="emailMensagem">E-mail</label>
-                                    <input type="email" class="form-control border-secondary" id="emailMensagem" placeholder="exemplo@exemplo.com">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label for="assunto">Assunto</label>
-                                    <input type="text" class="form-control border-secondary" id="assunto" placeholder="Digite aqui o assunto">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="mensagem">Menssagem</label>
-                                    <textarea class="form-control border-secondary" id="mensagem" placeholder="Digite aqui sua menssagem" rows="3"></textarea>
-                                </div>
+                            <h5 class="card-title ml-3">Contato</h5>                            
+                            <div class="form-group col-6">
+                                <label for="emailMensagem">E-mail</label>
+                                <input type="email" class="form-control border-secondary" id="emailMensagem" placeholder="Digite aqui o e-mail" required>
+                            </div>                            
+                            <div class="form-group col-6">
+                                <label for="assunto">Assunto</label>
+                                <select class="form-control border-secondary" id="assunto" required>
+                                    <option>Selecione o assunto</option>
+                                    <option>Assunto 1</option>
+                                    <option>Assunto 2</option>
+                                    <option>Assunto 3</option>
+                                    <option>Outro</option>
+                                </select>
+                              </div>
+                            <div class="form-group col-12">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea class="form-control border-secondary" id="mensagem" placeholder="Digite aqui a menssagem" rows="3" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-dark ml-3">Enviar</button>
                         </form>
