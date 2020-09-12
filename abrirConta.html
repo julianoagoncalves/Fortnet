@@ -138,18 +138,61 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="form-group">
-                              <label for="banco">Banco</label>
-                              <select class="form-control border-secondary" id="banco" required>
-                                <option>Selecione o banco</option>
-                                <option>Banco 1</option>
-                                <option>Banco 2</option>
-                                <option>Banco 3</option>
-                                <option>Banco 4</option>
-                                <option>Banco 5</option>
-                              </select>
+                                <label for="banco">Banco</label>
+                                <select class="form-control border-secondary" id="banco">
+                                    <option>Selecione o banco</option>
+                                    <option>Banco 1</option>
+                                    <option>Banco 2</option>
+                                    <option>Banco 3</option>
+                                    <option>Banco 4</option>
+                                    <option>Banco 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="agencia">Agência</label>
+                                <input type="text" id="agencia" class="form-control border-secondary" maxlength="4" required>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="conta">Conta</label>
+                                <input type="text" id="conta" class="form-control border-secondary" required>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-5 mb-5 border-secondary">
+                    <h6 class="heading-small text-muted mb-4">Interesses</h6>
+                    <div class="row">
+                        <div class="col-3 text-center">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="bitcoin" value="opcao1">
+                                <label class="form-check-label" for="bitcoin">Bitcoin</label>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="altcoin" value="opcao2">
+                                <label class="form-check-label" for="altcoin">Altcoin</label>
                             </div>
                           </div>
+                        <div class="col-3 text-center">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="dolar" value="opcao3">
+                                <label class="form-check-label" for="dolar">Dolar</label>
+                            </div>
+                          </div>
+                        <div class="col-3 text-center">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="ouro" value="opcao4">
+                                <label class="form-check-label" for="ouro">Ouro</label>
+                            </div>
+                        </div>
                     </div>
+                    <hr class="mt-5 mb-5 border-secondary">
+                    <h6 class="heading-small text-muted mb-4">Senha</h6>
+                    <button type="button" class="btn btn-dark">Cadastrar</button>
                 </form>
             </div>
         </div>
