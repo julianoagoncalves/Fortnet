@@ -1,3 +1,46 @@
+//mascaras para text box cpf, celular e cep
+
+function mascaraCpf(objeto){
+    
+    if(objeto.value.length == 3)
+       objeto.value = objeto.value + '.';
+    
+    if(objeto.value.length == 7)
+    objeto.value = objeto.value + '.';
+    
+    if(objeto.value.length == 11)
+    objeto.value = objeto.value + '-';
+}
+
+function mascaraCelular(objeto){
+
+    if(objeto.value.length == 0)
+      objeto.value = '(' + objeto.value;
+ 
+    if(objeto.value.length == 3)
+       objeto.value = objeto.value + ')';
+    
+    if(objeto.value.length == 4)
+    objeto.value = objeto.value + ' ';
+    
+    if(objeto.value.length == 6)
+    objeto.value = objeto.value + ' '; 
+
+    if(objeto.value.length == 11)
+      objeto.value = objeto.value + '-';
+ }
+ 
+ function mascaraCep(objeto){
+    
+    if(objeto.value.length == 5)
+       objeto.value = objeto.value + '-';
+}
+
+//impedindo de colar no textbox confirmar e-mail
+document.getElementById('confirmarEmail').onpaste = function(){
+    return false;
+}
+
 //Busca o elemento <input> com o valor do CEP
 let input = document.getElementById('cep')
 
@@ -33,3 +76,6 @@ let preencheCampos = (data) => {
     localidade.value = data.localidade
     bairro.value = data.bairro
 }
+
+
+    
