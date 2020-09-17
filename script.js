@@ -77,5 +77,25 @@ let preencheCampos = (data) => {
     bairro.value = data.bairro
 }
 
+let formulario = {
+    handleSubmit:(event)=>{
+        event.prevetDefault();
+        let send = true;
 
+        let inputs = form.querySelectorAll('input');
+
+        for(let i=0; i<input.length; i++){
+            let input = inputs[i];
+            console.log(input);
+        }
+
+        send = false;
+        if(send){
+            form.submit()
+        }
+    }
+};
+
+let form = document.querySelector('.formulario');
+form.addEventListener('submit', formulario.handleSubmit);
     
